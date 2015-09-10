@@ -42,6 +42,7 @@ class mcollective (
 
   # server-specific
   $server_config_file = undef, # default dependent on $confdir
+  $server_logger_type = 'file',
   $server_logfile     = '/var/log/mcollective.log',
   $server_loglevel    = 'info',
   $server_daemonize   = 1,
