@@ -19,6 +19,11 @@ class mcollective::server::config {
   mcollective::server::setting { 'daemonize':
     value => $mcollective::server_daemonize,
   }
+  
+  
+  mcollective::server::setting { 'logger_type':
+    value => $mcollective::server_logger_type,
+  }
 
   mcollective::server::setting { 'logfile':
     value => $mcollective::server_logfile,
